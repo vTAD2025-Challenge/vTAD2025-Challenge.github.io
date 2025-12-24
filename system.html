@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Descriptions - vTAD Challenge 2025</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0033A0',
+                        dark: '#1E293B',
+                        light: '#F8FAFC'
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        a:link {
+            color:rgba(0, 51, 160, 1);
+        }
+        a:visited {
+            color: purple;
+        }
+        a:hover {
+            color: red;
+        }
+        .system-entry {
+            margin-bottom: 2rem;
+        }
+        .system-title {
+            font-weight: 700;
+            font-size: 1.125rem; /* text-lg */
+            margin-bottom: 0.5rem;
+            color: #1E293B; /* dark */
+        }
+        .system-authors {
+            font-style: italic;
+            color: #374151; /* gray-700 */
+            margin-bottom: 0.5rem;
+        }
+        .system-links li {
+            margin-bottom: 0.25rem;
+        }
+    </style>
+</head>
+<body class="font-inter bg-light text-dark flex flex-col min-h-screen">
+    <!-- Header -->
+    <header class="bg-primary text-white py-6 shadow-md">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl font-bold text-center">Voice Timbre Attribute Detection Challenge 2025</h1>
+            <div class="flex justify-center gap-4 mt-6 flex-wrap">
+                <!-- Link to Intro -->
+                <a href="index.html" class="inline-block border-2 border-white !text-white font-bold py-2 px-6 rounded-full hover:bg-white hover:!text-primary transition duration-300 shadow-md">
+                    竞赛介绍 (Competition Introduction)
+                </a>
+
+                <!-- Current Page: System -->
+                <span class="inline-block bg-white text-primary font-bold py-2 px-6 rounded-full shadow-md cursor-default">
+                    参赛系统 (Competition System)
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12 flex-grow">
+        <section class="max-w-4xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-normal text-dark mb-8">System descriptions</h2>
+            <div class="border-t border-gray-300 mb-8"></div>
+
+            <!-- System 1 -->
+            <div class="system-entry">
+                <h3 class="system-title">受KA 表示定理启发的语音音色属性检测模型</h3>
+                <p class="system-authors">彭程，姜林，彭博，陈颖超，邓赛男</p>
+                <ul class="list-disc list-inside text-dark system-links ml-4">
+                    <li>Team: 勇往直前队 (T1)</li>
+                    <li><a href="受KA表示定理启发的语音音色属性检测模型.pdf">System description</a></li>
+                    <!-- <li><a href="#">Slides</a></li> -->
+                </ul>
+            </div>
+
+            <!-- System 2 -->
+            <div class="system-entry">
+                <h3 class="system-title">CUHK-EE-DSP&STL Systems for the vTAD Challenge at NCMMSC 2025</h3>
+                <p class="system-authors">Aemon Yat Fei Chiu, Jingyu Li, Tan Lee, Yusheng Tian, and Guangyan Zhang</p>
+                <ul class="list-disc list-inside text-dark system-links ml-4">
+                    <li>Team: CUHK-EE-DSPST (T2)</li>
+                    <li><a href="CUHK_EE_DSP_STL_Systems_for_the_vTAD_Challenge_at_NCMMSC_2025.pdf">System description</a></li>
+                    <!-- <li><a href="#">Slides</a></li> -->
+                </ul>
+            </div>
+
+            <!-- System 3 -->
+            <div class="system-entry">
+                <h3 class="system-title">QvTAD: Differential Relative Attribute Learning
+for Voice Timbre Attribute Detection</h3>
+                <p class="system-authors">Zhiyu Wu, Jingyi Fang, Yufei Tang,
+Yuanzhong Zheng, Yaoxuan Wang, and Haojun Fei</p>
+                <ul class="list-disc list-inside text-dark system-links ml-4">
+                    <li>Team: Qifu Voice (T3)</li>
+                    <li><a href="QvTAD Differential Relative Attribute Learning for Voice Timbre Attribute Detection.pdf">System description</a></li>
+                    <!-- <li><a href="#">Slides</a></li> -->
+                </ul>
+            </div>
+
+            <!-- System 4 -->
+            <div class="system-entry">
+                <h3 class="system-title">Introducing Discriminative Speaker Embeddings for Voice Timbre Attribute Detection</h3>
+                <p class="system-authors">Zhida Song and Liang He</p>
+                <ul class="list-disc list-inside text-dark system-links ml-4">
+                    <li>Team: AuroraLab (T4)</li>
+                    <li><a href="Xinjiang_University_paper_vTAD.pdf">System description</a></li>
+                    <!-- <li><a href="#">Slides</a></li> -->
+                </ul>
+            </div>
+
+            <!-- System 5 -->
+            <div class="system-entry">
+                <h3 class="system-title">A Discriminative System Using Prior Features Applied to the vTAD Challenge</h3>
+                <p class="system-authors">Mengyuan Deng, Jing Wang, Yue Lang, and Xiang Xie</p>
+                <ul class="list-disc list-inside text-dark system-links ml-4">
+                    <li>Team: bit_608 (T5)</li>
+                    <!-- <li><a href="#">System description</a></li> -->
+                    <!-- <li><a href="#">Slides</a></li> -->
+                </ul>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-8 mt-auto">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; vTAD Challenge 2025. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
